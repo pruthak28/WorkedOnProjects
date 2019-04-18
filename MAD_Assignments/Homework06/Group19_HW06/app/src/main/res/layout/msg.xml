@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:contentPadding="5dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtMsgValue"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.48"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtMsgFirstName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/ivMsgImg" />
+
+            <TextView
+                android:id="@+id/txtMsgTime"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                android:gravity="right"
+                android:textStyle="bold"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/txtMsgFirstName"
+                card_view:layout_constraintTop_toBottomOf="@+id/ivMsgImg" />
+
+            <ImageView
+                android:id="@+id/ivMsgImg"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="103dp"
+                android:layout_marginLeft="103dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="63dp"
+                android:layout_marginRight="63dp"
+                android:layout_marginBottom="14dp"
+                card_view:layout_constraintBottom_toTopOf="@+id/txtMsgFirstName"
+                card_view:layout_constraintEnd_toStartOf="@+id/ivDelete"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/txtMsgValue"
+                card_view:srcCompat="@drawable/ic_panorama_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:srcCompat="@drawable/ic_delete_black_24dp"
+                tools:ignore="MissingConstraints,VectorDrawableCompat"
+                tools:layout_editor_absoluteY="71dp" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

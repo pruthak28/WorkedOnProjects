@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostNote">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/Notetxt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="66dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btnPost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.366"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="161dp"
+            android:layout_marginLeft="161dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginRight="162dp"
+            android:text="@string/txtPost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Notetxt" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Group19_IC10</string>
+    <string name="txtCancel">Cancel</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="btnLogin">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtAddNote">Add Note</string>
+    <string name="txtPost">Post</string>
+    <string name="txtClose">Close</string>
+
+    <string name="sharedpref_key">com.example.group19_ic10.SharedPref</string>
+    <string name="HTTPtoken">token</string>
+</resources>

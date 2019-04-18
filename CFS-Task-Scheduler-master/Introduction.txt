@@ -1,0 +1,6 @@
+Introduction
+
+Project: Task Scheduler using Red-Black Trees
+
+  The Completely Fair Scheduler (CFS) is a process scheduler which handles CPU allocation for executing processes and aims at maximizing overall CPU utilization while also maximizing interactive performance. CFS uses the concept of “sleeper fairness”, which considers the sleeping or waiting tasks equivalent to those on the run queue. This means that interactive tasks which spend most of their time waiting for user input or other events get a comparable share of CPU time when they need it.
+A "maximum execution time" is calculated for each process. This time is based upon the idea that an "ideal processor" would equally share processing power amongst all processes. Thus, the maximum execution time is the time the process has been waiting to run, divided by the total number of processes, or in other words, the maximum execution time is the time the process would have expected to run on an "ideal processor".

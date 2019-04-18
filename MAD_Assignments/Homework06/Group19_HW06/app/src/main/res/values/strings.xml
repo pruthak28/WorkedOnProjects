@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Group19_HW06</string>
+
+    <string name="txtCancel">Cancel</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="btnLogin">Login</string>
+    <string name="txtJintMsg">Type message to send...</string>
+</resources>

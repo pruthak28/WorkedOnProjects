@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InClass09_Group19</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="txtCancel">Cancel</string>
+    <string name="txtCreateNew">Create New Contact</string>
+    <string name="btnSubmit">Submit</string>
+</resources>
